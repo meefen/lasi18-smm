@@ -1,6 +1,6 @@
 # LASI '18 Tutorial: Social Media Mining in Learning Contexts
 
-Use tutorial hashtag **#LASI18SMM** in your tweets and web annotations.
+Use tutorial hashtag **#LASI18smm** in your tweets and web annotations.
 
 ## Introduction
 
@@ -14,7 +14,7 @@ Learning--of various kinds--takes place through mediated interaction on social m
 2. Buckingham Shum, S., & Ferguson, R. (2012). [Social Learning Analytics](https://via.hypothes.is/https://pdfs.semanticscholar.org/3864/1a9e8445149c9ff7a14e4b587c709fc63a5f.pdf). *Educational Technology & Society, 15* (3), 3–26.
 
 **Note**: Register for an [Hypothes.is](https://web.hypothes.is/) account if you don't have one yet.
-Tag your annotations with #LASI18SMM.
+Tag your annotations with #LASI18smm.
 
 ### Install
 
