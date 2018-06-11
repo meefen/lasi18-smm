@@ -30,8 +30,9 @@ tweets %>%
   glimpse()
 
 # save cleaned data as a csv file
-write_csv(tweets, path = "data/tweets.csv")
+# write_csv(tweets, path = "data/tweets.csv")
 save(tweets, file="data/tweets.Rdata")
+# load(url("https://github.com/meefen/lasi18-smm/raw/master/data/tweets.Rdata"))
 
 ## 2.2. Collect Hypothesis annotations using API
 
@@ -48,6 +49,7 @@ glimpse(annotations)
 
 # save data as an Rdata file
 save(annotations, file="data/annotations.Rdata")
+# load(url("https://github.com/meefen/lasi18-smm/raw/master/data/annotations.Rdata"))
 
 # 3. Analyze Twitter data
 
@@ -90,7 +92,7 @@ EnsurePackage("igraph")
 # EnsurePackage("SparseM")
 
 # Create a network/graph using igraph
-g <- graph.data.frame(rt.df, directed = TRUE)
+g <- graph.data.frame(rt_df, directed = TRUE)
 
 # Plot with igraph (quick and dirty)
 plot.igraph(g)
@@ -102,11 +104,12 @@ ggnet2(g, node.size = 2, node.color = "black", edge.size = 1, edge.color = "grey
 
 ## 3.1.2. Connectivity of the community
 
+# network level measures
 edge_density(g)
 reciprocity(g)
-centralize(g)
 centr_degree(g)$centralization
 
+# modularity
 wtc <- cluster_walktrap(g, steps = 1000)
 length(wtc)
 modularity(wtc)
@@ -127,12 +130,13 @@ centr_bt_df %>% arrange(desc(centrality)) %>% head(10)
 ##      using IBM Watson API
 
 # Load the `cognizer` package
-devtools::install_github("ColumbusCollaboratory/cognizer")
+# devtools::install_github("ColumbusCollaboratory/cognizer")
 library(cognizer)
 
 # Load useful functions
 source("utils/watson_analysis.R")
 
+# check the structure of annotations
 glimpse(annotations)
 
 # Tone analysis
@@ -142,7 +146,7 @@ tones <- text_tone(text, userpwd = watson_userpwd)
 tones[1][[1]]$document_tone$tone_categories$tones
 
 # Keyword extraction
-response <- analyze_text_with_watsonNLU(text, username, password)
+response <- analyze_text_with_watsonNLU(text, username_NLU, password_NLU)
 # check results
 response$headers
 signal <- content(response)

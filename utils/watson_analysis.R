@@ -4,7 +4,7 @@ analyze_text_with_watsonNLU <- function(text, username_NLU, password_NLU) {
   url_NLU = "https://gateway.watsonplatform.net/natural-language-understanding/api"
   version_NLU = "?version=2017-02-27"
   
-  text <- URLencode(raw_text)
+  text <- URLencode(text)
   
   POST(url=paste(
     url_NLU,

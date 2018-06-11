@@ -159,7 +159,12 @@ Cases
 Learning attributes on social media
 ====
 
-INSERT TABLE HERE
+| Category            	| Formal attributes                                 	| Informal attributes                                               	| Social media attributes                                                                           	|
+|---------------------	|---------------------------------------------------	|-------------------------------------------------------------------	|---------------------------------------------------------------------------------------------------	|
+| Purpose             	| Externally determined (e.g., curriculum standard) 	| Self-determined community of interest                             	| Self-determined socially determined                                                               	|
+| Process of Learning 	| Teacher-led (didactic)                            	| Self-directed (negotiated); Individual agency                     	| Self-directed; Peer- or other- influenced; Unintended network effects                             	|
+| Location/context    	| Time-restricted; Curriculum                       	| Open-ended; No curriculum                                         	| Open-ended; Varies                                                                                	|
+| Content             	| Knowledge acquisition; High status knowledge      	| Everyday practice; Status of knowledge irrelevant/ unacknowledged 	| User-generated, Re-mixed; Social construction and distribution, Knowledge as collective agreement 	|
 
 (Adapted from Greenhow & Lewin, 2016)
 
@@ -215,11 +220,6 @@ Example: Connected Learning
 
 ![](https://clalliance.org/wp-content/themes/cla2016/images/Graphic-Main-2.png)
 
-Example: Connected Learning
-====
-
-![](https://clalliance.org/wp-content/themes/cla2016/images/Graphic-Main-2.png)
-
 <!-- a social MOOC (https://www.futurelearn.com/courses/social-media-analytics?utm_campaign=Share+Links&utm_medium=futurelearn-run_details&utm_source=twitter#section-educators) -->
 
 Example: Connected Learning
@@ -264,14 +264,15 @@ Part 3: Collecting Social Media Data
 type: section
 
 
-Research Ethics
+Privacy and Ethics
 ====
 type: prompt
 
 - Research
-- Human subjects
+- Human subjects or web documents
 - Private information
 - Informed consent
+- Data, algorithms, and practices
 - ...
 
 
@@ -338,6 +339,10 @@ Case 2: #MarginalSyllabus
 
 ![](smm-slides-figure/marginalsyllabus.png)
 
+API keys
+====
+
+![](smm-slides-figure/api-keys.png)
 
 Collect Hypothesis Annotations
 ====
@@ -359,7 +364,7 @@ Store data
 
 ```{r, eval=FALSE}
 # save data as an Rdata file
-save(annotations, file="data/annotations_raw.Rdata")
+save(annotations, file="data/annotations.Rdata")
 ```
 
 
