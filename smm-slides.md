@@ -127,7 +127,7 @@ Example: Github
 Example: Wiki
 ====
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Wikimedia_logo_family_complete_2.svg" width=600px>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Wikimedia_logo_family_complete_with_WM_AM_logo.png/800px-Wikimedia_logo_family_complete_with_WM_AM_logo.png" width=600px>
 
 <!-- ![](https://upload.wikimedia.org/wikipedia/commons/3/34/Wikimedia_logo_family_complete_2.svg) -->
 
@@ -161,10 +161,10 @@ Learning attributes on social media
 
 | Category            	| Formal attributes                                 	| Informal attributes                                               	| Social media attributes                                                                           	|
 |---------------------	|---------------------------------------------------	|-------------------------------------------------------------------	|---------------------------------------------------------------------------------------------------	|
-| Purpose             	| Externally determined (e.g., curriculum standard) 	| Self-determined community of interest                             	| Self-determined socially determined                                                               	|
-| Process of Learning 	| Teacher-led (didactic)                            	| Self-directed (negotiated); Individual agency                     	| Self-directed; Peer- or other- influenced; Unintended network effects                             	|
-| Location/context    	| Time-restricted; Curriculum                       	| Open-ended; No curriculum                                         	| Open-ended; Varies                                                                                	|
-| Content             	| Knowledge acquisition; High status knowledge      	| Everyday practice; Status of knowledge irrelevant/ unacknowledged 	| User-generated, Re-mixed; Social construction and distribution, Knowledge as collective agreement 	|
+| Purpose             	| Externally determined 	| Self-determined community of interest                             	| Self-determined socially determined                                                               	|
+| Process of Learning 	| Teacher-led (didactic)                            	| Self-directed (negotiated); Individual agency                     	| Self-directed; Other- influenced; Unintended network effects                             	|
+| Location/context    	| Time-restricted                       	| Open-ended                                         	| Open-ended                                                                                	|
+| Content             	| Knowledge acquisition; High status knowledge      	| Everyday practice; Status of knowledge unacknowledged 	| User-generated, Re-mixed; Social construction and distribution, Knowledge as collective agreement 	|
 
 (Adapted from Greenhow & Lewin, 2016)
 
@@ -218,7 +218,7 @@ Example: Open Learning MOOC
 Example: Connected Learning
 ====
 
-![](https://clalliance.org/wp-content/themes/cla2016/images/Graphic-Main-2.png)
+<img src="https://clalliance.org/wp-content/themes/cla2016/images/Graphic-Main-2.png" width=500px>
 
 <!-- a social MOOC (https://www.futurelearn.com/courses/social-media-analytics?utm_campaign=Share+Links&utm_medium=futurelearn-run_details&utm_source=twitter#section-educators) -->
 
@@ -418,7 +418,12 @@ Community evolution
 Cognitive and affective states
 ====
 
-Q & A
+Thank You!
 ====
-type: section
+type: prompt
 
+<br>
+Contact
+- chenbd@umn.edu
+- @bod0ng
+- http://bodong.ch/
