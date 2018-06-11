@@ -85,8 +85,8 @@ How is learning conceptualized?
 Greenhow 2016, table 1
 
 Greenhow 2009:
-- learner participation and creative practices
-- online identity formation
+- learners' participation and creative practices
+- learners' online identity formation
 
 participation and affiliation (Goggins Table 1)
 different kinds of social learning analytics (Buckingham Shum, S., & Ferguson)
@@ -94,11 +94,23 @@ different kinds of social learning analytics (Buckingham Shum, S., & Ferguson)
 ### Some cases
 
 - LAK conference community / LASI (last year or this year?)
-- an cMOOC
-- an informal CoP on Twitter
+- an cMOOC (e.g., http://openlearninghub.net/, https://hawksey.info/tagsexplorer/?key=1HnD3t0x9kSfRiqRvUknHIQDQuxwXjH93eEbo4NsVjFU&gid=400689247) or a social MOOC (https://www.futurelearn.com/courses/social-media-analytics?utm_campaign=Share+Links&utm_medium=futurelearn-run_details&utm_source=twitter#section-educators)
+- an informal CoP on Twitter (https://twitter.com/hashtag/personalizedpd?f=tweets&vertical=default&src=refgoogle)
 - annotation stuff (what case?)
 
 ### One case to focus on here
+
+hashtag #personalizedpd
+
+Annoucement
+- https://twitter.com/JaimeDonally/status/988401616058544128
+- https://www.alludolearning.com/blog/2017/01/read-it-share-it-try-it
+- " Then, one glorious day, I found the #personalizedPD chat and my entire perspective changed. Instantly, I loved these people. " https://mandyfroehlich.com/2016/04/20/i-just-met-you-but-i-love-you/
+- they blog: https://twowritingteachers.org/2016/03/21/a-teachers-bill-of-rights-pd-possibilities/
+- http://skindawgbizteacher.blogspot.com/search?q=%23personalizedPD
+- #personalizedPD site:wordpress.com
+
+hashtag #MarginalSyllabus
 
 ?
 - Where?
@@ -107,8 +119,12 @@ different kinds of social learning analytics (Buckingham Shum, S., & Ferguson)
 
 ## Part 3. Collecting social media data
 
+### Data privacy (addressed upfront)
+
+### Twitter
+
 Twitter data
-- TAGS
+- TAGS: https://mashe.hawksey.info/2011/11/twitter-how-to-archive-event-hashtags-and-visualize-conversation/
 
 API route
 - Hypothesis data

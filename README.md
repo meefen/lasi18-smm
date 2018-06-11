@@ -20,6 +20,17 @@ Tag your annotations with #LASI18smm.
 
 1. [R](https://cran.r-project.org/)
 2. [RStudio development environment](https://www.rstudio.com/)
+3. R packages: `tidyverse`, `igraph`, `sna`, ...
+  - [How to install, load, and unload packages in R](http://www.dummies.com/programming/r/how-to-install-load-and-unload-packages-in-r/)
+  - `install.packages(c("tidyverse", "igraph", "GGally", "httr", "jsonlite", "RCurl", "stringr"))`
+
+### Optional
+
+- [Install Git](https://git-scm.com/)
+- [Twitter dev keys](https://apps.twitter.com/)
+- [Hypothesis dev keys](https://web.hypothes.is/developers/)
+- [IBM Watson Tone Analyzer](https://www.ibm.com/watson/services/tone-analyzer/) dev keys
+- [IBM Watson Natural Language Understanding](https://www.ibm.com/watson/services/natural-language-understanding/) dev keys
 
 ## Tentative Agenda
 
