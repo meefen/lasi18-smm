@@ -157,11 +157,7 @@ for(i in 1:length(keywords)) {
   print(paste(keywords[[i]]$text," sentiment:",keywords[[i]]$sentiment$score))
 }
 
-# focus on annotations
-# start from mining annotations -- watson sentiment analysis
-# then add complexity by introducing annotated text
-# to reveal how participants are reacting to content
-# then add social layer -- focus on replies to different types of sentiments (that responds to different content)
+
 
 ## Challenges
 
