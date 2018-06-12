@@ -474,6 +474,12 @@ class: center, middle
 
 # Demo
 
+### Social network analysis
+
+### Tone analysis
+
+### Keyword extraction + sentiment analysis
+
 ---
 class: center, middle
 
