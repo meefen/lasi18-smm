@@ -38,4 +38,3 @@ rsconnect/
 # Customized files to ignore
 notes.md
 load_keys.R
-data/tweets.csv

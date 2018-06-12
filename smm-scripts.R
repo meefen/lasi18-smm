@@ -5,8 +5,21 @@
 ##      Note: Change the folder to where the file is on your computer
 setwd("~/Google Drive/Research/Conferences/LASI2018/lasi18-smm")
 
-## 1.2. Load utility functions written by Bodong
+## 1.2. Install packages if needed
+# install.packages(c("tidyverse", "igraph", "GGally", 
+#                    "httr", "jsonlite", "RCurl", "stringr"))
+# devtools::install_github("ColumbusCollaboratory/cognizer")
+
+## 1.2. Load all utility functions written by Bodong
 source("utils/utils.R", local=TRUE)
+source("utils/collect_tweets.R")
+source("utils/munge_tweets.R")
+source("utils/social_network_analysis.R")
+source("utils/collect_annotations.R")
+source("utils/watson_analysis.R")
+
+# Load API keys
+source("load_keys.R") # you will need to create a file with your own keys
 
 ## 1.3. Load R packages
 EnsurePackage("tidyverse")
@@ -15,11 +28,7 @@ EnsurePackage("tidyverse")
 
 ## 2.1. Collect tweets from Google Drive (Sheets)
 
-# Load helpful functions written by Bodong
-source("utils/collect_tweets.R")
-source("utils/munge_tweets.R")
-
-gsheet_url <- "https://docs.google.com/spreadsheets/d/e/2PACX-1vRzuK4ltTt6jSJXYAhj-ERxvlhw3UsP5zCeCyrfXfEwNyTRu8kn_Hn8RwVewaxMPly2KcJAiciCTK_0/pub?gid=400689247&single=true&output=csv"
+gsheet_url <- "https://docs.google.com/spreadsheets/d/e/2PACX-1vSLP0cZdiKFRrcZZIXJbxIs_MMpFuIarf2VZ0NT0vrl3tyLrYwdtF3XvHzLBOZhpL_r6CBkv4aXpfz-/pub?gid=400689247&single=true&output=csv"
 tweets_raw <- collect_tweets_from_gdrive(gsheet_url)
 
 # basic data cleanup (incl. removing duplicates)
@@ -36,12 +45,9 @@ save(tweets, file="data/tweets.Rdata")
 
 ## 2.2. Collect Hypothesis annotations using API
 
-# Load helpful functions written by Bodong
-source("utils/collect_annotations.R")
-source("load_keys.R") # you need to create a file with your own keys
 
 # Collect annotations
-annotations <- collect_annotations(tag = "marginalsyllabus",
+annotations <- collect_annotations(tag = "lasi18smm",
                                    token = h_token)
 
 # basic information
@@ -71,9 +77,6 @@ tweets %>% group_by(reply_to) %>%
 ## 3.1. Social network analysis
 
 ## 3.1.1. Set up
-
-# Load useful functions
-source("utils/social_network_analysis.R")
 
 # Create data frames
 rt_df <- create_graph_df(tweets, 
@@ -130,25 +133,21 @@ centr_bt_df %>% arrange(desc(centrality)) %>% head(10)
 ##      using IBM Watson API
 
 # Load the `cognizer` package
-# devtools::install_github("ColumbusCollaboratory/cognizer")
 library(cognizer)
-
-# Load useful functions
-source("utils/watson_analysis.R")
 
 # check the structure of annotations
 glimpse(annotations)
 
 # Tone analysis
-text <- TrimUrls(annotations$text[1])
+# example here: https://tone-analyzer-demo.ng.bluemix.net/
+(text <- TrimUrls(annotations$text[1]))
 tones <- text_tone(text, userpwd = watson_userpwd)
-# results
-tones[1][[1]]$document_tone$tone_categories$tones
+tones[1][[1]]$document_tone$tone_categories$tones # results
 
 # Keyword extraction
 response <- analyze_text_with_watsonNLU(text, username_NLU, password_NLU)
 # check results
-response$headers
+# response$headers
 signal <- content(response)
 # keywords
 keywords <- signal$keywords
