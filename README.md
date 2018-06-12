@@ -6,6 +6,13 @@ Use tutorial hashtag **#LASI18smm** in your tweets and web annotations.
 
 Learning--of various kinds--takes place through mediated interaction on social media. This tutorial will engage participants in both theoretical considerations and analytical techniques pertinent to social media mining. This tutorial will provide hands-on experience with applying network analysis and text mining on a sample dataset.
 
+## Materials
+
+- [Slides](slides-ninja.Rmd)
+- [R scripts](smm-scripts.R)
+
+Each document have a corresponding HTML file (`*.html`) ready to be opened in an Internet browser.
+
 ## Preparation
 
 ### Read and annotate
