@@ -270,6 +270,8 @@ http://openlearninghub.net/ (Garnder Campbell)
 
 ![](http://lt.umn.edu/news/wp-content/uploads/2015/12/scigirls-pbs-kids-header21.png)
 
+[Project Website](http://pbskids.org/scigirls/home)
+
 ---
 
 # Example: Personal Learning Networks
@@ -458,6 +460,7 @@ class: middle, center
 # Mining what?
 
 ---
+class: middle, center
 
 ## Connectivity of a community
 

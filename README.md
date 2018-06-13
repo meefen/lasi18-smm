@@ -8,7 +8,7 @@ Learning--of various kinds--takes place through mediated interaction on social m
 
 ## Materials
 
-- [Slides](slides-ninja.Rmd)
+- [Slides](https://htmlpreview.github.io/?https://raw.githubusercontent.com/meefen/lasi18-smm/master/slides-ninja.html)
 - [R scripts](smm-scripts.R)
 
 Each document have a corresponding HTML file (`*.html`) ready to be opened in an Internet browser.
