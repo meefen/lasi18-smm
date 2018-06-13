@@ -140,7 +140,7 @@ glimpse(annotations)
 
 # Tone analysis
 # example here: https://tone-analyzer-demo.ng.bluemix.net/
-(text <- TrimUrls(annotations$text[1]))
+(text <- TrimUrls(annotations$text[3]))
 tones <- text_tone(text, userpwd = watson_userpwd)
 tones[1][[1]]$document_tone$tone_categories$tones # results
 
@@ -155,15 +155,3 @@ length(keywords)
 for(i in 1:length(keywords)) {
   print(paste(keywords[[i]]$text," sentiment:",keywords[[i]]$sentiment$score))
 }
-
-
-
-## Challenges
-
-# 1. Equity conversations are an emotional journey. 
-# How are annotated keywords or entities linked to different sentiments?
-# How are annotated keywords or entities linked to different tones?
-# To what extent are sentiments and tones transmitted among participants?
-
-# 2. Assuming there is a way to link social media profiles (Twitter, blogs, Hypothesis),
-# How are participants using different media for different modes of engagement?
